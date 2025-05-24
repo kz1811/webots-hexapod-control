@@ -3,7 +3,8 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-GAIT_SWITCH_TIME = 10.0
+GAIT_SWITCH_TIME = 10.0     # Смена походки
+END_SIM_TIME = 15.0         # Конец симуляции и рисование графиков
 NEW_BASE_PHASES = [
     0.0,
     2 * np.pi / 3,
@@ -104,9 +105,10 @@ def main():
             pos_log[i].append(sensors[motor_names[i]].getValue())
             signal_log[i].append(angle)
 
-        if t > GAIT_SWITCH_TIME + 8.0:
+        if t > END_SIM_TIME:
             break
 
+    #  Правая средняя нога
     labels = ["RMC", "RMF", "RMT"]
     idxs = [3, 4, 5]
     leg_key = "RM"

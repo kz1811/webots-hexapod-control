@@ -14,7 +14,7 @@ MIN_AMPLITUDE = 0.1                     # Минимальная амплиту�
 FINAL_TIME = 15.0                       # Время рисования графиков
 
 def plot_adaptive_leg_results(time_series, amp_log, pos_log, target_log, signal_log, contact_log):
-    #  Правая передняя нога - 3 мотора
+    #  Правая передняя нога
     motors = ['RAC', 'RAF', 'RAT']
     ids = [6, 7, 8]
     for i, label in zip(ids, motors):
