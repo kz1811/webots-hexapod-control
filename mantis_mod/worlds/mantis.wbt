@@ -1,0 +1,113 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/Mantis.proto"
+EXTERNPROTO "../protos/Wall.proto"
+
+WorldInfo {
+  info [
+    "Mantis Hexapod Robot"
+    "Author: Matt Denton"
+  ]
+  title "Mantis Hexapod"
+  ERP 0.62
+  basicTimeStep 10
+  contactProperties [
+    ContactProperties {
+      coulombFriction [
+        12
+      ]
+      softCFM 1e-05
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.34710106943498886 0.32739490941768895 0.8788250229052826 1.7967562323227264
+  position -37.239547000800876 -41.70105196524227 149.42191590682853
+  follow "wall(11)"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Mantis {
+  translation -40.4888 -25.8077 125.432
+  rotation -0.004700291746298948 0.002240936323501578 0.9999864426390459 1.4519472075947006
+  name "Mantis(1)"
+  controller "pymantis"
+}
+Wall {
+  translation -30.54 3.75002 123.57
+  name "wall(5)"
+  size 100 200 1
+}
+Wall {
+  translation -46.5647 -9.19 125.313
+  rotation 0 1 0 -0.3926996938995747
+  name "wall(12)"
+  size 5 5 0.5
+}
+Wall {
+  translation -44.4684 -9.19 124.749
+  rotation 0 1 0 1.5707996938995747
+  name "wall(11)"
+  size 4 5 0.5
+}
+Wall {
+  translation -56.21 -15.75 124.57
+  name "wall(10)"
+  size 1 1 0.3
+}
+Wall {
+  translation -56.58 -17.19 124.63
+  name "wall(9)"
+  size 1 1 0.3
+}
+Wall {
+  translation -56.93 -17.19 124.89
+  name "wall(8)"
+  size 1 1 0.3
+}
+Wall {
+  translation -55.83 -17.19 124.49
+  name "wall(4)"
+  size 1 1 0.3
+}
+Wall {
+  translation -55.8 -12.45 124.56
+  name "wall(1)"
+  size 4 5 0.5
+}
+Wall {
+  translation -53.2359 -9.05989 125.577
+  rotation 1 0 0 -2.7489003061004254
+  name "wall(13)"
+  size 4 4 0.5
+}
+Wall {
+  translation -53.2359 -5.59324 125.124
+  rotation 1 0 0 2.4870956132800117
+  name "wall(14)"
+  size 4 4 0.5
+}
+Wall {
+  translation -56.32 -17.8 124.6
+  name "wall(3)"
+  size 1 1 0.3
+}
+Wall {
+  translation -38.11 -17.87 124.56
+  name "wall(2)"
+  size 4 5 0.3
+}
+Wall {
+  translation -79.67 3.75002 124.51
+  name "wall(6)"
+  size 2 200 5
+}
+Wall {
+  translation 18.44 3.75002 124.38
+  name "wall(7)"
+  size 2 200 5
+}
